@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "af2",
+      "subscriptionName": "function1",
+      "connection": "nes-asb-test_Services_SERVICEBUS"
+    },
+    {
+      "name": "outputSbMsg",
+      "direction": "out",
+      "type": "serviceBus",
+      "connection": "nes-asb-test_Services_SERVICEBUS",
+      "topicName": "aggregatornode"
+    }
+  ]
+}
